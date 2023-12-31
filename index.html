@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Curso HTML</title>
+</head>
+
+<body>
+    <h1 id="inicio">Introdução ao HTML</h1>
+    <hr>
+    <img width="300" src="https://arquivo.devmedia.com.br/marketing/img/curso-curso-de-html-basico-371.png" alt="">
+    <h2>Vamos entender a estrutura básica</h2>
+    <h3 style="color: blue;">Índice</h3>
+    <ul>
+        <li><a href="#surgimento">Surgimento da internet</a></li>
+        <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+        <li><a href="#tags">Falando sobre Tags</a></li>
+        <li><a href="#atributos">Atributos básicos das Tags</a></li>
+        <li><a href="#textos">Falando sobre textos</a></li>
+        <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+
+    </ul>
+    <h2 id="surgimento">
+        Surgimento da Internet <small>(voltar)</small>
+    </h2>
+    <p>
+        A internet surgiu, na década de 1960, como uma rede (chamada Arpanet) para envio de informações entre centro de
+        pesquisas e instalações militares e o Pentágono.
+
+        A primeira mensagem enviada se deu entre computadores da UCLA e da SRI, instituições universitárias dos Estados
+        Unidos.
+
+        Na década de 1980, a internet expandiu seu uso para fins comerciais e privados.
+
+        A rede chegou ao Brasil em 1988, sendo liberada para uso privado e comercial em 1994.
+
+        A internet é, atualmente, o principal meio de comunicação do planeta, com mais de 5 bilhões de usuários.
+
+        O Dia Mundial da Internet é comemorado em 17 de maio."
+    </p>
+    <cite>
+        <mark>https://brasilescola.uol.com.br/informatica/internet.html</mark>
+    </cite>
+    <small><a href="#inicio">(voltar)</a></small>
+    <h2 id="estrutura">
+        Estrutura básica do HTML
+    </h2>
+    <p>
+    <p>O documento HTML sempre inicia com o que
+        chamamos de estrutura básica.</p>
+    <p>Esta estrutura é quase que imutável.</p>
+    <p>Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código.</p>
+    <p>Geralmente os
+        editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não
+        precisa se preocupar em decorá-la, mas é bom que faça.</p>É possível compreender o documento em HTML de uma
+    maneira
+    muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:
+
+    Definição do documento (doctype)
+    Cabeça (head)
+    Corpo (body)
+    Doctype - Definindo o documento
+    Uma coisa importante: SEMPRE deve existir o doctype, que é este código
+    <!DOCTYPE html>.
+
+    O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que
+    o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma
+    possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.
+
+    <p>HEAD</p>
+    Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados
+    implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação
+    de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento
+    tag head.
+
+    <p>BODY</p>
+    Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer
+    texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons,
+    miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados
+    (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par
+    de tags
+
+    <body> e </body>.
+
+    Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os
+    resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do
+    seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir
+    qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar
+    marcada no cabeçalho do mesmo documento.
+
+    Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, onde
+    serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.
+    </p>
+    <q>
+        <mark>https://tableless.github.io/iniciantes/manual/html/estruturabasica.html</mark>
+    </q>
+    <small><a href="#inicio">(voltar)</a></small>
+    <h2 id="tags">
+        Falando sobre Tags
+    </h2>
+    <p>
+        O que são Tags?
+        Tags são o conjunto de caracteres que formam um elemento, ou seja,
+        quando nos referenciamos à Tag "p".
+        Existem dois tipos de Tags, as que necessitam de fechamento e as
+        que não necessitam de fechamento.
+        Para as que necessitam de fechamento, utilizamos o sinal
+        de menor ( < ), seguido do nome do elemento e o sinal de maior (> )
+            para abertura. Para fechamento, utilizamos o sinal de menor ( < ), seguido de barra ( / ), nome do elemento
+                e o sinal de maior (> ).
+    </p>
+    <q>
+        <mark>https://tableless.github.io/iniciantes/manual/html/oquetags.html</mark>
+    </q>
+    <small><a href="#inicio">(voltar)</a></small>
+    <h2 id="atributos">
+        Atributos básicos das Tags
+    </h2>
+    <p>
+        Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente, os
+        atributos são utilizados para atribuir uma classe ou id a um elemento.
+
+        A maioria das tags tem seus próprios atributos. Contudo, existem alguns atributos genéricos que podem ser
+        utilizados na maioria das tags HTML, vamos estudá-los:
+
+    <p>class=”…“ – Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos);</p>
+    <p>id=”…“ – Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);
+    <p>style=”…” – Permite incluir elementos CSS (estilos) dentro da tag;
+    <p>lang=”…” – Define o idioma principal do elemento;
+    <p>title=”…” – Define o título do elemento;
+    <p>alt=”…” – Define um texto alternativo e, por isso, é muito utilizado em imagens, auxilia nas práticas de SEO;
+    <p>hidden – Oculta o elemento;
+    <p>align=”…” – Permite definir o padrão de alinhamento desse elemento, como por exemplo: right, center, left e
+        justify;
+    <p>width=”…” – Define uma largura para o elemento;
+    <p>height=”…” – Define uma altura para o elemento.
+        Essas são os principais atributos, porém existem diversos outros que devem ser estudados e podem ser utilizados
+        no seu código.
+    </p>
+    <q>
+        <mark>https://www.homehost.com.br/blog/tutoriais/tags-html/</mark>
+    </q>
+    <small><a href="#inicio">(voltar)</a></small>
+    <h2 id="textos">
+        Falando sobre textos
+    </h2>
+    <p>
+    <h4>Aqui alguns exemplos de textos e suas formatações:</h4>
+    <p>&lt;p&gt;Eu sou um parágrafo, oh sim, eu sou.&lt;/p&gt;</p>
+    <p>
+    <p>Eu sou um parágrafo, oh sim, eu sou.</p>
+    </p>
+    <p>&lt;h1&gt;Eu sou o título da história.&lt;/h1&gt;</p>
+    <p>
+    <h1>Eu sou o título da história.</h1>
+    </p>
+    <p>&lt;p&gt;Por Chris Mills&lt;/p&gt;</p>
+    <p>
+    <p>Por Chris Mills</p>
+    </p>
+    <p>&lt;h2&gt;Capítulo 2: O eterno silêncio&lt;/h2&gt;</p>
+    <p>
+    <h2>Capítulo 2: O eterno silêncio</h2>
+    </p>
+    </p>
+    <q>
+        <mark>https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals</mark>
+    </q>
+    <small><a href="#inicio">(voltar)</a></small>
+    <h2 id="listas">
+        Listas ordenadas e não ordenadas
+    </h2>
+    <p>
+        Não são raros os casos em que queremos exibir
+        uma listagem em nossas páginas.
+        O HTML tem algumas tags definidas para que possamos
+        fazer isso de maneira correta.
+        A lista mais comum é a lista não-ordenada
+        definida pela tag &lt;ul&gt; (unordered list) e a tag
+        &lt;ol&gt; (ordered list)
+
+
+    </p>
+    <q>
+        <mark>https://www.alura.com.br/apostila-html-css-javascript</mark>
+    </q>
+    <small><a href="#inicio">(voltar)</a></small>
+</body>
+
+</html>
